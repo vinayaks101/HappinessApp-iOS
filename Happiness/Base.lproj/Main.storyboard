@@ -19,6 +19,11 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-6I-NNr" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,10 +34,13 @@
                             <constraint firstItem="NoH-6I-NNr" firstAttribute="top" secondItem="ChE-Yr-deJ" secondAttribute="top" id="j5E-ZL-gUB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="NoH-6I-NNr" id="z09-ZN-5qt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2TO-ef-ap8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="447"/>
+            <point key="canvasLocation" x="458" y="524"/>
         </scene>
     </scenes>
 </document>
